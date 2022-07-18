@@ -121,7 +121,7 @@ A ? B : C : 삼항 조건 연산자이며 형태가 이거 하나이다. A가 �
 A...B, A..<B, A..., ...A : 범위 연산자이며 값의 범위를 나타낸다.
 A ?? B : nil병합 연산자이며 A가 nil인 경우 B를 반환한다.
 ```
-#### Making Decisions
+### Making Decisions
 **조건문**  
 
 조건문에서는 if 구문과 switch 구문을 이용한다.
@@ -173,7 +173,7 @@ defalut:
 }
 // Liam Neeson said  'I don't know who you are'
 ```
-#### Repeating Tasks
+### Repeating Tasks
 **반복문**
 ##### for-in
 for-in 반복 구문 ***은 반복적인 데이터나 시퀀스를 다룰 때 많이 사용한다.
@@ -248,7 +248,7 @@ repeat {
 // Good bye yoojin
 ```
 
-#### Functions
+### Functions
 **함수**
 ```
 func 함수 이름(매개 변수...) -> 반환 타입 {
