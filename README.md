@@ -281,7 +281,7 @@ let bil = 25.3
 let squ = bil + calcu(bil: bil)
 ```
 
-#### Collections
+### Collections
 **배열**
 ```
 // 대괄호를 사용하여 배열임을 표현.
