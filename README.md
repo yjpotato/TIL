@@ -34,9 +34,9 @@ let height = 155
 ```
 
 👉 상수로 선언된 값은 변경할 수 없다. 오류가 발생
-###Data Types in Swift
+### Data Types in Swift
 **데이터 타입**
-####Numeric Type
+#### Numeric Type
 
 
 유형을 지정하지 않으면 Swift의 유형 유추는 기본적으로 Double을 사용한다.
@@ -55,10 +55,10 @@ let num1 = 14.2
 type(of: num1) // Float
 ```
 
-#####Int와 UInt
+##### Int와 UInt
 Int : +, - 부호를 포함한 정수
 UInt : - 부호를 포함하지 않는 0을 포함한 양의 정수
-#####Bool
+##### Bool
 Bool은 불리언 타입이다. 불리언 타입은 참(true)또는 거짓(false)만 값으로 가진다.
 ```
 var boolean: Bool = true
@@ -69,8 +69,8 @@ true 또는 false는 따옴표 없이 작성된다.
 
 
 
-####Strings and Characters
-#####String : 문자의 나열, 즉 문자열을 말한다. 
+#### Strings and Characters
+##### String : 문자의 나열, 즉 문자열을 말한다. 
 문자열은 큰 따옴표(“)로 묶어 표현 합니다.
 ```markdown
 let fruit:String = "apple"
@@ -102,7 +102,7 @@ I heard that your dreams came true.
 Guess she gave you things I didn’t give to you.\"
 """
 ```
-#####Character : 유니코드에서 지원하는 모든 언어 및 특수기호.
+##### Character : 유니코드에서 지원하는 모든 언어 및 특수기호.
 문자는 큰 따옴표(“)로 묶어 표현 한다.
 ```
 let book: Character = "📒"
@@ -110,7 +110,7 @@ let 한글변수이름: Character ="ㄱ"
 // 한글도 유니코드 문자에 속하므로 스위프트 코드의 변수 이름으로 사용할 수 있으나 권장하지 않음.
 ```
 
-####Operators
+#### Operators
 **연산자**
 ```
 연산자는 단항, 이항, 삼항, 전위, 중위, 후위 연산자로 구분된다.
@@ -121,10 +121,10 @@ A ? B : C : 삼항 조건 연산자이며 형태가 이거 하나이다. A가 �
 A...B, A..<B, A..., ...A : 범위 연산자이며 값의 범위를 나타낸다.
 A ?? B : nil병합 연산자이며 A가 nil인 경우 B를 반환한다.
 ```
-####Making Decisions
+#### Making Decisions
 **조건문**
 조건문에서는 if 구문과 switch 구문을 이용한다.
-#####if
+##### if
 ```
 let first: Int = 5
 let second: Int = 4
@@ -139,7 +139,7 @@ if first > second{
 ```
 else if는 몇개가 이어져도 상관 없으며 else 블록은 없어도 상관 없다. 
 맨위의 if문의 조건을 충족하지 않으면 다음 else if문의 명령을 실행하고, else if문의 조건을 충족하지 않으면 다음 else 문을 실행하게 된다.
-#####switch
+##### switch
 ``` 
 switch 입력 값 {
 case 비교 값1:
@@ -172,9 +172,9 @@ defalut:
 }
 // Liam Neeson said  'I don't know who you are'
 ```
-####Repeating Tasks
+#### Repeating Tasks
 **반복문**
-#####for-in
+##### for-in
 for-in 반복 구문 ***은 반복적인 데이터나 시퀀스를 다룰 때 많이 사용한다.
 ```
 for 임시 상수 in 시퀀스 아이템 {
@@ -207,7 +207,7 @@ for i in 0...5{
 💡 break문과 continue 차이점
 break문은 조건문도 빠져나가면서 반복문 자체도 탈출하고 끝이나지만,
 continue문은 해당 '조건문만' 실행하지 않고, 반복문은 이어서 실행하는 제어문이다.
-#####while
+##### while
 while 반복문도 for-in과 마찬가지로 continue. break 등의 제어 키워드 사용이 가능하다.
 ```
 var counter = 0
@@ -231,7 +231,7 @@ print("stop")
 //stop
 
 ```
-#####repeat - while
+##### repeat - while
 repeat - while 반복문은 다른 프로그래밍 언어의 do-while 구문과 크게 다르지 않다.
 repeat 블록의 코드를 최초 1회 실행한 후, while 다음의 조건이 성립하면 블록 내부의 코드를 반복 실행한다.
 ```
@@ -247,7 +247,7 @@ repeat {
 // Good bye yoojin
 ```
 
-####Functions
+#### Functions
 **함수**
 ```
 func 함수 이름(매개 변수...) -> 반환 타입 {
@@ -280,7 +280,7 @@ let bil = 25.3
 let squ = bil + calcu(bil: bil)
 ```
 
-####Collections
+#### Collections
 **배열**
 ```
 // 대괄호를 사용하여 배열임을 표현.
