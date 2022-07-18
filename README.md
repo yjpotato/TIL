@@ -322,7 +322,8 @@ var numberForName: [String: Int] = ["yagom":100. "yoojin":200, "Jenny":300]
 print(numberForName.isEmpty) // false
 print(numberForName.count)  //3
 ```
-**세트**  #
+**세트**  
+
 세트는 같은 타입의 데이터를 순서 없이 하나의 묶음으로 저장하는 형태의 컬렉션 타입이다.
 세트 내의 값은 모두 유일한 값, 즉 중복된 값이 존재하지 않는다. 그래서 세트는 보통 **순서가
 중요하지 않거나 각 요소가 유일한 값이어야 하는 경우**에 사용한다.
