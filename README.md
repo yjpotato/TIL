@@ -5,7 +5,7 @@
 
 
 
-###Variables and Constants
+### Variables and Constants
 **변수와 상수**  
 #### **var : 설정된 값을 변경할 수 있는 변수(가변 변수)**
 
