@@ -306,7 +306,8 @@ names.removeLast() // ["Jenny","happy", "Joker"]
 print(names.firstIndex(of: "yagom"))  // nil
 print(names.firstIndex(of: "Jenny"))  // 0 
 ```
-**딕셔너리**
+**딕셔너리**  
+
 딕셔너리는 요소들이 순서 없이 키와 값의 쌍으로 구성되는 컬렉션 타입.
 하나의 딕셔너리 안의 키는 같은 이름을 중복해서 사용할 수 없다.
 ```
