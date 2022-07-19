@@ -343,7 +343,7 @@ var names: Set<String> = ["yagom", "yoojin", "jenny"]
 print(names.count)  // 3
 print(names.remove("kai"))  // nil
 ```
-####
+#### 구조체
 
 참고  : Swift5[야곰]
      : https://www.udemy.com/course/swift-5-for-absolute-beginners/learn/lecture/28626408#overview
