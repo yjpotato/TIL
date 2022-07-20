@@ -157,8 +157,12 @@ default:    // 한전된 범위가 명확지 않다면 default는 필수.
 }
 ```
 #### Guard
-
-
+```
+guard 조건 else {
+	//조건이 false면 실행
+    return || throw
+}
+```
 
 **case XXX: 다음에는 꼭 실행 가능한 코드가 위치해야 한다.**
 예시 (문자열 switch case 구성)
@@ -285,7 +289,7 @@ let bil = 25.3
 let squ = bil + calcu(bil: bil)
 ```
 
-####Collections
+#### Collections
 **배열**
 ```
 // 대괄호를 사용하여 배열임을 표현.
@@ -345,7 +349,89 @@ var names: Set<String> = ["yagom", "yoojin", "jenny"]
 print(names.count)  // 3
 print(names.remove("kai"))  // nil
 ```
+#### Class & Struct
+##### class
+클래스는 참조  타입
+클래스는 클래스끼리 상속이 가능하다!
+```
+class myIntroduce {
+    var name = "yoojin"
+    
+    func my_name() {
+        print("my name is \(name)")
+    }
+}
 
+let jyj : myIntroduce = myIntroduce()
 
+print(jyj.name)
+jyj.my_name()
 
+jyj.name = "Jeong"
+jyj.my_name()
 
+// yoojin
+my name is yoojin
+my name is Jeong
+```
+##### struct
+구조체는 값 타입
+```
+struct Sqaure {
+    let length: Double
+    
+    func calculateArea(){
+        length * length
+        print(calculateArea)
+    }
+    
+}
+```
+## class 와 struct 공통점
+
+- 값을 저장하기 위한 프로퍼티를 정의할 수 있음
+- 기능을 제공하기 위해 메소드를 정의할 수 있음
+## class 와 struct 차이점
+### class
+
+- 참조 타입
+- ARC로 메모리 관리
+- 같은 클래스 인스턴스를 여러 개 변수에 할당한 뒤 값을 변경시키면 할당한 모든 변수에 영향을 줌
+- 상속 가능(클래스끼리)
+
+### struct
+
+- 값 타입
+- 구조체 변수를 새로운 변수에 할당할 때마다 새로운 구조체가 할당
+- 값을 변경시키더라도 다른 변수에 영향을 주지 않음
+
+## enum
+enum은 원시값이 없는 열거형이다.
+```
+enum fruit {
+case apple, watermelon, banana
+}
+```
+하나의 case를 이용해서 나열해서 작성할 수 있는 가독성이 있다.
+
+👉 원시값이 없는 열거형!
+```
+enum school{
+    case elementary
+    case middle
+    case high
+
+}
+let yourschool = school.middle
+print("myschool",yourschool)
+
+enum grade: Int{
+    case first = 1
+    case second = 2
+    
+}
+let yourgrade = grade.second
+let yourgrade = grade.second.rawValue 
+print("my grade: \(yourgrade)")
+print("my grade: \(yourgrade.rawValue)") 
+```
