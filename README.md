@@ -487,6 +487,23 @@ print("my grade: \(yourgrade.rawValue)")
 
 #### 구조체
 
+# Optionals
+
+nil은 변수 또는 상수에 값이 없을 수 있다 라는 뜻으로 해석하면 좋다.
+
+옵셔널을 해제할 수 있는 방법은 총 3가지
+
+# 옵셔널 바인딩
+
+옵셔널 바인딩은 주로 if let(또는 if var)구문과 같이 쓰인다.
+먼저 체크해준다! 라고 생각하면 이해하기 쉽다.
+
+이게 nil인지, 아니면 값이 있는지,경우에 따라 결과를 달리 하고 싶을 수 있을때, 옵셔널 바인딩을 사용하여 검사해주면 된다.
+
+옵셔널 체이닝
+
+강제 언랩핑
+
 참고  : Swift5[야곰]
      : https://www.udemy.com/course/swift-5-for-absolute-beginners/learn/lecture/28626408#overview
      
